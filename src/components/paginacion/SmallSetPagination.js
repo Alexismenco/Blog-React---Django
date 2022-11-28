@@ -44,7 +44,7 @@ function SmallSetPagination({get_blog_list_page, blog_list, count}){
         if (active === page) {
           content = (
               <div key={i} className={`hidden md:-mt-px md:flex`}>
-                  <div className="border-indigo-500 text-indigo-600 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+                  <div className="border-red-500 text-red-500 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
                   {pageNumber}
                   </div>
               </div>
@@ -72,16 +72,15 @@ function SmallSetPagination({get_blog_list_page, blog_list, count}){
     }
 
     return(
-        <nav className="border-t border-gray-200 px-4 flex items-center justify-between sm:px-0">
-          
-          <div className="-mt-px w-0 flex-1 flex">
+        <nav className="border-t mt-5 border-gray-200 px-4 flex items-center justify-between sm:px-0">
+          <div className="-mt-px w-0 border-red-500 flex-1 flex">
         
             <button
               onClick={()=>{previous_number()}}
-              className="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300"
+              className="border-t-2 border-transparent  pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-white hover:border-gray-300"
             >
-              <ArrowNarrowLeftIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-              Previous
+              <ArrowNarrowLeftIcon className="mr-3 h-5 w-5 text-red-400" aria-hidden="true" />
+              Anterior
             </button>
           </div>
 
@@ -90,10 +89,10 @@ function SmallSetPagination({get_blog_list_page, blog_list, count}){
           <div className="-mt-px w-0 flex-1 flex justify-end">
             <button
               onClick={()=>{next_number()}}
-              className="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300"
+              className="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-white hover:border-gray-300"
             >
-              Next
-              <ArrowNarrowRightIcon className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+              Siguiente
+              <ArrowNarrowRightIcon className="ml-3 h-5 w-5 text-red-400" aria-hidden="true" />
             </button>
           </div>
 

@@ -7,6 +7,9 @@ import Blog from 'containers/pages/blog/Blog';
 import BlogPost from 'containers/pages/blog/BlogPost';
 import BlogCategory from 'containers/pages/blog/category/BlogCategory';
 import Search from 'containers/pages/Search';
+import About from 'containers/pages/About';
+
+
 
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
           <Route path="/blog/categories/:category_id" element={<BlogCategory/>}/>
 
           <Route path="/search/:term" element={<Search/>}/>
+
+          <Route path="/about" element={<About/>}/>
+      
 
 
         </Routes>

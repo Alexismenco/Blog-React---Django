@@ -21,8 +21,8 @@ function BlogPost({
         <FullWidthLayout>
             {
                 post ?
-                <div className="relative py-16 bg-white overflow-hidden">
-            <div className="relative px-4 sm:px-6 lg:px-8">
+                <div className=" relative py-16 overflow-hidden colores">
+            <div className="relative  px-4 sm:px-6 lg:px-8">
                 <div className="text-lg max-w-prose mx-auto">
                 <h1>
                     <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
@@ -35,12 +35,11 @@ function BlogPost({
                 <p className="mt-8 text-xl text-center text-gray-500 leading-8">
                     {post.excerpt}
                 </p>
-                <img src={post.thumbnail} alt="" />
-                
+                <img className="mx-auto d-block"  src={post.thumbnail} alt="" />
                 </div>
 
                 <div className="mt-6 text-center prose prose-indigo prose-lg text-gray-500 mx-auto">
-                <p>
+                <p >
                     {post.description}
                 </p>
                 

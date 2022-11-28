@@ -9,17 +9,18 @@ function Search({
     search_blog,
     posts
 }){
-
+    
     const params = useParams()
     const term = params.term
 
     useEffect(()=>{
         search_blog(term)
     },[])
+    console.log(posts)
 
     return(
         <FullWidthLayout>
-            <BlogListSearch blog_list={posts}/>
+            <BlogListSearch blog_list={posts} key="kll"/>
         </FullWidthLayout>
     )
 }

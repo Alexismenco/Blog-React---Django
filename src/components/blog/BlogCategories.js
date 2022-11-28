@@ -11,26 +11,27 @@ function BlogCategories ({get_categories, categories}){
 
     return(
         <div>
-            <div className="bg-white">
+            <div className="bg-dark ">
       <div className="py-8 sm:py-10 xl:max-w-7xl xl:mx-auto xl:px-8">
         <div className="px-4 sm:px-6 sm:flex sm:items-center sm:justify-between lg:px-8 xl:px-0">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">View Categories</h2>
+          <h2 className="text-2xl font-extrabold tracking-tight text-yellow-200">Categorias</h2>
           <Link to="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
-            Browse all categories<span aria-hidden="true"> &rarr;</span>
+            Ver todas las categorias<span aria-hidden="true"> &rarr;</span>
           </Link>
         </div>
 
-        <div className="mt-4 flow-root">
-          <div className="-my-2">
-            <div className="box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible">
-              <div className="absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-5 xl:gap-x-8">
+        <div className="mt-4 flow-root ">
+          <div className="-my-2 ">
+            <div className="box-content  py-2 relative h-80 overflow-x-auto xl:overflow-visible">
+              <div className="absolute  min-w-screen-xl px-4 flex mb-3 space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-5 xl:gap-x-8">
                 {
                     categories ? categories.map(category=>(
                         <Link
                             to={`/blog/categories/${category.id}`}
                             className="relative w-56 h-80 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
+                            
                         >
-                            <span aria-hidden="true" className="absolute inset-0">
+                            <span aria-hidden="true" className="absolute inset-0 ">
                             <img src={category.thumbnail} alt="" className="w-full h-full object-center object-cover" />
                             </span>
                             <span
@@ -48,7 +49,7 @@ function BlogCategories ({get_categories, categories}){
 
         <div className="mt-6 px-4 sm:hidden">
           <Link to="#" className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-            Browse all categories<span aria-hidden="true"> &rarr;</span>
+          Ver todas las categorias<span aria-hidden="true"> &rarr;</span>
           </Link>
         </div>
       </div>
