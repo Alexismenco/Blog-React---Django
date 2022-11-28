@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-SITE_NAME= 'Blog 0xfizos'
+SITE_NAME= 'Blog Economy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -123,13 +123,13 @@ CSRF_TRUSTED_ORIGINS = [
 
 if not DEBUG:
     CORS_ORIGIN_WHITELIST = [
-        'https://admin.solopython.com',
-        'https://blog.solopython.com',
+        'http://localhost:3000',
+        'http://localhost:8000',
     ]
 
     CSRF_TRUSTED_ORIGINS = [
-        'https://admin.solopython.com',
-        'https://blog.solopython.com',
+        'http://localhost:3000',
+        'http://localhost:8000',
     ]
 
 
